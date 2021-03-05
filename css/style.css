@@ -5,18 +5,13 @@ h1{
     align-content: center;
 }
 .navbar{
-    background-image: url(../images/logo.jpeg);
+    background-image: url(../images/logo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height:120vh;
     width: 120vh;
-    background-position: center;
+    background-position:right;
     background-color: black;
     align-items: center;
 
-ul{
-    list-style-type: none;
-}
-ul li{
 
-}
