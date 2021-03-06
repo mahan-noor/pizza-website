@@ -64,3 +64,11 @@ header .logo img{
 .main p{
     color: rgb(1, 13, 14);
 }
+#img1 img{
+    background-size: 20px;
+    height: 70vh;
+    width: 70vh;
+    background-color: black;
+  
+
+}
