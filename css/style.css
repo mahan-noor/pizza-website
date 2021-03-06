@@ -30,7 +30,12 @@ header nav a{
     padding: 10px 20px;
     text-decoration: none;
     color: rgb(231, 212, 212);
+    border: 1px solid transparent;
 
+}
+header nav a:hover{
+    background-color: #fff;
+    color: #000;
 }
 header .logo{
     width: 150px;
@@ -57,5 +62,5 @@ header .logo img{
     padding-bottom: 20px;
 }
 .main p{
-    color: rgb(2, 2, 0);
+    color: rgb(1, 13, 14);
 }
