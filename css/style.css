@@ -53,6 +53,9 @@ header .logo img{
     padding-bottom: 20px;
 }
 .main h3{
-    color: yellow;
+    color: rgb(7, 7, 1);
+    padding-bottom: 20px;
 }
-
+.main p{
+    color: rgb(2, 2, 0);
+}
