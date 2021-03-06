@@ -77,3 +77,10 @@ header .logo img{
 h2{
     text-align: center;
 }
+#menu{
+    width: 100%;
+    padding-bottom: 5rem;
+}
+@media only screen and(max-width: 1024px){
+    
+}
