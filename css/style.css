@@ -64,11 +64,16 @@ header .logo img{
 .main p{
     color: rgb(1, 13, 14);
 }
+.container{
+    background-color: rgb(253, 238, 238);
+    background-size: inherit;
+    padding: 20px;
+}
 #img1 img{
     background-size: 20px;
     height: 70vh;
     width: 70vh;
-    background-color: black;
-  
-
+}
+h2{
+    text-align: center;
 }
