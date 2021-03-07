@@ -121,3 +121,10 @@ h2{
     text-align: center;
     margin: 0 auto;
 }
+#order{
+    background-image: url();
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
