@@ -141,6 +141,13 @@ h2{
     text-decoration: transparent;
     padding-top: 5rem;
     margin-bottom: 5rem;
-
-
+}
+#name{
+    background: transparent;
+}
+#region {
+    background: transparent;
+}
+#number{
+    background: transparent;
 }
