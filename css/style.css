@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -64,7 +64,7 @@ header .logo img{
 .main p{
     color: rgb(1, 13, 14);
 }
-.container{
+.container about us{
     background-color: rgb(253, 238, 238);
     background-size: inherit;
     padding: 20px;
@@ -77,9 +77,31 @@ header .logo img{
 h2{
     text-align: center;
 }
+/*menu*/
 #menu{
     width: 100%;
-    padding-bottom: 5rem;
+    background-color: rgb(8, 7, 7);
+    padding-bottom: 10rem;
+}
+#menu h3{
+    margin-bottom: 2rem;
+}
+#menu img{
+    border-radius: 50%;
+}
+.section title{
+    align-items: center;
+    font-size: 4rem;
+    padding-top: 2rem;
+}
+.subtitle{
+    padding-top: 2rem;
+
+}
+.three-column-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
 }
 @media only screen and(max-width: 1024px){
     
