@@ -26,49 +26,83 @@
         <div class="main">
             <h1>We made it for you</h1>
             <h3>You like we deliver</h3>
-            <a href="" class="get started"></a>
+            <a href="" class="button">Karibu</a>
         </div>
     </section>
   <!--about us-->
-    <div class="container">
-        <h2>About us</h2>
-        <div id="about us" class="text-center">
-            <div class="row"> 
-                <div id="img1" class="text-center"> 
-                    <img src="./images/cheese.jpg">
+        <div class="container">
+            <h2>About us</h2>
+            <div id="about us" class="text-center">
+                <div class="row"> 
+                    <div id="img1" class="text-center"> 
+                        <img src="./images/cheese.jpg">
+                    </div>
+                        <h3>Karibu Rocket pizza</h3>
+                        <p>Rocket Pizza box might be one of the most recognisable icons of Kenya. Whichever way you slice it, Rocket Pizza is an industry leader in the quick service pizza game. The first Rocket Pizza outlet opened its doors in 2006 in Nairobi, Kenya, and rose quickly in popularity. Serving hot oven-fresh pizza with its signature all-natural tomato sauce and using only the freshest ingredients, Rocket Pizza has established itself at the top of the industry and is easily one of the first choices in quick service pizza in Kenya.
+                        </p>
+                        <p>We are here for you,our space is your space you can link with friends and family, where we will leave your mouth craving for more. </p>
+            
+                </div>  
+            </div>
+        </div>
+  <!--menu-->
+    <div id="menu">
+        <div class="container">
+            <h2 class="section-title">What We  Offer</h2>
+            <div class="three-column-grid">
+                <div class="grid-item">
+                    <img src="./images/image3.jpeg" alt="" width="200">
+                    <h3 class="subtitle"><strong>Chicken</strong>Pizza</h3>
+                    <p>this is chicken based pizza where it contain chicken product either the chicken meat or sausage chicken based.</p>
                 </div>
-                    <h3>Karibu Rocket pizza</h3>
-                    <p>Rocket Pizza box might be one of the most recognisable icons of Kenya. Whichever way you slice it, Rocket Pizza is an industry leader in the quick service pizza game. The first Rocket Pizza outlet opened its doors in 2006 in Nairobi, Kenya, and rose quickly in popularity. Serving hot oven-fresh pizza with its signature all-natural tomato sauce and using only the freshest ingredients, Rocket Pizza has established itself at the top of the industry and is easily one of the first choices in quick service pizza in Kenya.
-                    </p>
-                    <p>We are here for you,our space is your space you can link with friends and family, where we will leave your mouth craving for more. </p>
-        
-            </div>  
+                <div class="grid-item">
+                    <img src="./images/image4.jpeg" alt="" width="200">
+                    <h3 class="subtitle"><strong>Plant-based</strong>Pizza</h3>
+                    <p>this is Plant-based pizza where it contain plants eg. mushroom, and vegan friendly products. </p>
+                </div>
+                <div class="grid-iteem">
+                    <img src="./images/image5.jpeg" alt="" width="200">
+                    <h3 class="subtitle"><strong>Beef</strong>Pizza</h3>
+                    <p>this is beef based pizza where it contain beef product </p>
+                </div>
+            </div>
         </div>
     </div>
-  <!--menu-->
-  <div id="menu">
-      <div class="container">
-          <h2 class="section-title">What We  Offer</h2>
-          <div class="three-column-grid">
-              <div class="grid-item">
-                  <img src="./images/image3.jpeg" alt="" width="200">
-                  <h3 class="subtitle"><strong>Chicken</strong>Pizza</h3>
-                  <p>this is chicken based pizza where it contain chicken product either the chicken meat or sausage chicken based.</p>
-              </div>
-              <div class="grid-item">
-                <img src="./images/image4.jpeg" alt="" width="200">
-                <h3 class="subtitle"><strong>Plant-based</strong>Pizza</h3>
-                <p>this is Plant-based pizza where it contain plants eg. mushroom, and vegan friendly products. </p>
-            </div>
-            <div class="grid-iteem">
-                <img src="./images/image5.jpeg" alt="" width="200">
-                <h3 class="subtitle"><strong>Beef</strong>Pizza</h3>
-                <p>this is beef based pizza where it contain beef product </p>
-            </div>
-          </div>
-      </div>
+    <!--order-->
+    <div class="jumbotron" id="order">
+        <h1>order</h1>
+        <form class="text-center" id="text-center">
+            <label>Pizaa Flavour</label>
+            <select class="flavour" id="flavour" required><br>
+                <option label="Alfredo pizza" value="900">Alfredo pizza</option>
+                <option label="BBQ chicken" value="1000"> BBQ chicken</option>
+                <option label="BBQ steak" value="1000">BBQ steak</option>
+                <option label="Veggie deluxe" value="600">Veggie deluxe</option>
+                <option label="Extravagganza" value="1200">Extravagganza</option>
+                <option label="Hawaiian" value="1500">Hawaiian</option>            
+            </select><br>
+            <br><label>Pizza Crust</label>
+            <select class="crust" id="crust" required><br>
+                <option label="Cheese filled crust" value="200">Cheese filled crust</option>
+                <option label="Thin crust" value="100">Thin crust</option>
+                <option label="Thick crust" value="200">Thick crust</option>
+                <option label="Stuffed crust" value="150">Stuffed crust</option>
+                <option label="Deep crust" value="180">Deep crust</option>
+            </select></br>
+            <br><label>Pizza Toppings</label> 
+            <select class="Toppings" id="Toppings" required><br>
+                <option label="pepperoni" value=""></option>
+                <option label="mushroom" value=""></option>
+                <option label="" value=""></option>
+                <option label="" value=""></option>
+                <option label="" value=""></option>
+            
+            </select>
 
-  </div>
+        </form>
+
+    </div>
+
     
   <script src="./js/jquery.js"></script> 
   <script src="./js/style.js"></script>
