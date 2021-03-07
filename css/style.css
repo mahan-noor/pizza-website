@@ -139,7 +139,8 @@ h2{
     text-align: left;
     flex-shrink: inherit;
     text-decoration: transparent;
-    margin-top: 2rem;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
 
 
 }
