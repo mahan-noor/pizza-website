@@ -1,30 +1,30 @@
-$(document).ready(function(){
+$(document).ready(function() {
     //form section to submit the users input calculate the total for the order//
-    $(text-center).submit(function(event){
+    $("#text-center").submit(function(event) {
         //function to get users input from the form
         function flavour(){
             var pizzaFlavour = document.getElementById("flavour").value;
-            return parseInt(pizzaFlavour)
+            return parseInt(pizzaFlavour);
 
         }
-        function size(){
+        function size() {
             var pizzaSize = document.getElementById("size").value;
-            return parseInt(pizzaSize)
+            return parseInt(pizzaSize);
 
         }
         function crust(){
             var pizzaCrust = document.getElementById("crust").value;
-            return parseInt(pizzaCrust)
+            return parseInt(pizzaCrust);
 
         }
         function toppings(){
             var pizzaToppings = document.getElementById("toppings").value;
-            return parseInt(pizzaToppings)
+            return parseInt(pizzaToppings);
 
         }
         function number(){
-            var pizzaNumber = document.getElementById("number").value;
-            return parseInt(pizzaNumber)
+            var pizzaNumber = document.getElementById("quantity").value;
+            return parseInt(pizzaNumber);
 
         }
         //a constructor to create objects
@@ -38,23 +38,34 @@ $(document).ready(function(){
         }
         //above constructor to save users order
         var userInput = new Order (flavour(), size(), crust(), toppings(), number());
+        //variable to store the total expenditure of the user
         var totalCost = 
         (userInput.newCrust +
             userInput.newSize +
             userInput.newToppings +
             userInput.newFlavour) *
             userInput.newQuantity;
+
+            //method to reset the form after all operation 
+            $("#text-center").reset();
+
+            event.preventDefault();
+        });
+    });
             
     //delivery input form 
+
+
     $(document).ready(function() {
         $("#delivery").submit(function () {
+
             var name = $("input#name").val();
             var number = $("input#number").val();
             var region = $("input#region").val();
 
             alert("hello" + name + ".your order has been successfully received and we will deliver to" + "within an hour.the delivery cost will be 200/= Thank you for choosing Rocket pizza." );
+            //$(this).get(0).reset()
+            // event.preventDefault()
         });
     });
 
-    });
-});
