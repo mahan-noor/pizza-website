@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    //form section to submit the users input calculate the total for the order//
+    //form function to submit the users input, calculate total for the order
     $("#text-center").submit(function(event) {
-        //function to get users input from the form
-        function flavour(){
+        //function to get users input from the forms
+        function flavour() {
             var pizzaFlavour = document.getElementById("flavour").value;
             return parseInt(pizzaFlavour);
 
@@ -27,18 +27,19 @@ $(document).ready(function() {
             return parseInt(pizzaNumber);
 
         }
-        //a constructor to create objects
-        function order(flavour, size, crust, toppings, quantity){
+        //a constructor to create objects/instances of user's orders
+        function order(flavour, size, crust, toppings, quantity) {
             this.newFlavour = flavour;
             this.newSize = size;
             this.newCrust = crust;
-            this.newToppings = toppings;
+            this.newTopping = topping;
             this.newQuantity = quantity;
-
         }
-        //above constructor to save users order
+
+        //an object/instance (of the above constructor) to save users order
         var userInput = new Order (flavour(), size(), crust(), toppings(), number());
-        //variable to store the total expenditure of the user
+
+        //a variable to store the total expenditure of the user
         var totalCost = 
         (userInput.newCrust +
             userInput.newSize +
