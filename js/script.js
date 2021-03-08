@@ -47,8 +47,14 @@ $(document).ready(function() {
             userInput.newFlavour) *
             userInput.newQuantity;
 
-          //  $("#text-center").reset();
-          //  event.preventDefault();
+            //prompt for the user
+            alert("your charges for the pizza" + totalCost);
+            
+            //a method to reset the form after all operations have been completed
+            $("#text-center").reset();
+
+            event.preventDefault();
+        
         });
     });
             
