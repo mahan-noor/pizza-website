@@ -46,15 +46,15 @@ $(document).ready(function(){
             userInput.newQuantity;
             
     //delivery input form 
-    $(document).ready(function(){
-        $("#delivery").submit(function (){
+    $(document).ready(function() {
+        $("#delivery").submit(function () {
             var name = $("input#name").val();
             var number = $("input#number").val();
             var region = $("input#region").val();
 
-
             alert("hello" + name + ".your order has been successfully received and we will deliver to" + "within an hour.the delivery cost will be 200/= Thank you for choosing Rocket pizza." );
         });
-    });          
+    });
+
     });
 });
