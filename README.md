@@ -21,10 +21,8 @@ The website is expected to do as follows:
 *Allow the user to choose if they want their their order to be delivered.
 *Shows the user the total amount payable.
 
-# licence
-MIT Licence Copyright (c) 2021 Ismahan Abey
-
-
-
+# license
+ License under [MIT License](LICENSE).
+ Copyright (c) 2021 Ismahan Abey
 
 
