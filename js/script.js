@@ -45,5 +45,6 @@ $(document).ready(function(){
             userInput.newFlavour) *
             userInput.newQuantity;
             
+            
     })
 })
