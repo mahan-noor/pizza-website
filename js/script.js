@@ -29,7 +29,21 @@ $(document).ready(function(){
         }
         //a constructor to create objects
         function order(flavour, size, crust, toppings, quantity){
-            this.newFlavour
+            this.newFlavour = flavour;
+            this.newSize = size;
+            this.newCrust = crust;
+            this.newToppings = toppings;
+            this.newQuantity = quantity;
+
         }
+        //above constructor to save users order
+        var userInput = new Order (flavour(), size(), crust(), toppings(), number());
+        var totalCost = 
+        (userInput.newCrust +
+            userInput.newSize +
+            userInput.newToppings +
+            userInput.newFlavour) *
+            userInput.newQuantity;
+            
     })
 })
