@@ -1,59 +1,51 @@
 $(document).ready(function() {
-    //form function to submit the users input, calculate total for the order
-    $("#text-center").submit(function(event) {
-        //function to get users input from the forms
-        function flavour() {
-            var pizzaFlavour = document.getElementById("flavour").value;
-            return parseInt(pizzaFlavour);
-
+    //form function to submit the users input, calculate total for the order, and prompt the user for some details
+      $("#text-center").submit(function(event) {
+        //functions to get user input from the forms
+        function flavor() {
+          var pizzaFlavour = document.getElementById("flavor").value;
+          return parseInt(pizzaFlavour);
         }
         function size() {
-            var pizzaSize = document.getElementById("size").value;
-            return parseInt(pizzaSize);
-
+          var pizzaSize = document.getElementById("size").value;
+          return parseInt(pizzaSize);
         }
-        function crust(){
-            var pizzaCrust = document.getElementById("crust").value;
-            return parseInt(pizzaCrust);
-
+        function crust() {
+          var pizzaCrust = document.getElementById("crust").value;
+          return parseInt(pizzaCrust);
         }
-        function toppings(){
-            var pizzaToppings = document.getElementById("toppings").value;
-            return parseInt(pizzaToppings);
-
+        function topping() {
+          var pizzaTopping = document.getElementById("topping").value;
+          return parseInt(pizzaTopping);
         }
-        function number(){
-            var pizzaNumber = document.getElementById("quantity").value;
-            return parseInt(pizzaNumber);
-
+        function number() {
+          var pizzaNumber = document.getElementById("quantity").value;
+          return parseInt(pizzaNumber);
         }
-        //a constructor to create objects/instances of user's orders
-        function order(flavour, size, crust, toppings, quantity) {
-            this.newFlavour = flavour;
-            this.newSize = size;
-            this.newCrust = crust;
-            this.newTopping = topping;
-            this.newQuantity = quantity;
+    
+        //a constructor to create objects/instances of a user's orders
+        function Order(flavor, size, crust, topping, quantity) {
+          this.newFlavor = flavor;
+          this.newSize = size;
+          this.newCrust = crust;
+          this.newTopping = topping;
+          this.newQuantity = quantity;
         }
-
-        //an object/instance (of the above constructor) to save users order
-        var userInput = new Order (flavour(), size(), crust(), toppings(), number());
-
+    
+        //an object/instance (of the above constructor) to save the users order
+        var userInput = new Order(flavor(), size(), crust(), topping(), number());
+    
         //a variable to store the total expenditure of the user
-        var totalCost = 
-        (userInput.newCrust +
-            userInput.newSize +
-            userInput.newToppings +
-            userInput.newFlavour) *
-            userInput.newQuantity;
+        var totalCost =
+          (userInput.newSize +
+            userInput.newCrust +
+            userInput.newTopping +
+            userInput.newFlavor) *
+          userInput.newQuantity;
+    
 
             //prompt for the user
             alert("your charges for the pizza" + totalCost);
-            
-            //a method to reset the form after all operations have been completed
-            $("#text-center").reset();
-
-            event.preventDefault();
         
         });
     });
