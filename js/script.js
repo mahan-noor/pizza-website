@@ -46,10 +46,8 @@ $(document).ready(function() {
             userInput.newFlavour) *
             userInput.newQuantity;
 
-            //method to reset the form after all operation 
-            $("#text-center").reset();
-
-            event.preventDefault();
+          //  $("#text-center").reset();
+          //  event.preventDefault();
         });
     });
             
@@ -63,7 +61,7 @@ $(document).ready(function() {
             var number = $("input#number").val();
             var region = $("input#region").val();
 
-            alert("hello" + name + ".your order has been successfully received and we will deliver to" + "within an hour.the delivery cost will be 200/= Thank you for choosing Rocket pizza." );
+            alert("hello" + name + ".your order has been successfully received and will be delivered to you " + "within an hour.the delivery cost will be 200/= Thank you for choosing Rocket pizza." );
             //$(this).get(0).reset()
             // event.preventDefault()
         });
