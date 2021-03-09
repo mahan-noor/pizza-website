@@ -45,7 +45,7 @@ $(document).ready(function() {
     
 
             //prompt for the user
-            alert("your charges for the pizza" + totalCost);
+            alert("Your charges for the pizza is " + totalCost);
         
         });
     });
